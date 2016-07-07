@@ -1,14 +1,19 @@
 import times
 
+const
+  ANSIC*    = "ddd MMM d HH:mm:ss yyyy"
+  UnixDate* = "yyyy"
+  RubyDate* = "y"
+  RFC822*   = "y"
+  RFC822Z*  = "y"
+  RFC850*   = "y"
+  RFC1123*  = "y"
+  RFC1123Z* = "y"
+  RFC3339*  = "y"
+  Kitchen*  = "y"
+  Stamp*    ="y"
+
 type
-  Now* = ref object of RootObj
+  Now* =ref object of RootObj
     time: TimeInfo
-
-proc new*(t: TimeInfo): Now=
-  result=new(Now)
-  result.time=t
-
-method beginingOfMinute(n: Now):TimeInfo {.base.}=
-  let aMin=initInterval(minutes=1)
-  result=n.time-aMin
 

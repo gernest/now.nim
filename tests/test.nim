@@ -1,6 +1,7 @@
-import unittest, now
+import unittest, now,times
 
-suite "Beginning of":
-  let baseFormat="2006-01-02 15:04:05.999999999"
-  test "Begining of the minute":
-    echo "Beginning of the minutes"
+suite "FORMAT strings":
+  test "ANSIC":
+    let ansicTime="Mon Jan 2 15:04:05 2006"
+    let info=parse(ansicTime,ANSIC)
+    check(format(info,ANSIC)==ansicTime)
