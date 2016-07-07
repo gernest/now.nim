@@ -2,7 +2,7 @@ import times
 
 const
   ANSIC*    = "ddd MMM d HH:mm:ss yyyy"
-  UnixDate* = "yyyy"
+  UnixDate* = "ddd MMM d HH:mm:ss ZZZ yyyy"
   RubyDate* = "y"
   RFC822*   = "y"
   RFC822Z*  = "y"
