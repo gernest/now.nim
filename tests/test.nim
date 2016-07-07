@@ -15,3 +15,8 @@ suite "FORMAT strings":
     let rubyTime="Mon Jan 02 15:04:05 -0700 2006"
     let info=parse(rubyTime,RubyDate)
     check(format(info,RubyDate)==rubyTime)
+
+  test "RFC822":
+    let rfc622Time="02 Jan 06 15:04 MST"
+    let info=parse(rfc622Time,RFC822)
+    check(format(info,RFC822)==rfc622Time)
