@@ -1,19 +1,16 @@
 import times
 
 const
-  ANSIC*    = "ddd MMM d HH:mm:ss yyyy"
-  UnixDate* = "ddd MMM d HH:mm:ss ZZZ yyyy"
-  RubyDate* = "ddd MMM dd HH:mm:ss zz'00' yyyy"
-  RFC822*   = "dd MMM yy HH:mm ZZZ"
-  RFC822Z*  = "y"
-  RFC850*   = "y"
-  RFC1123*  = "y"
-  RFC1123Z* = "y"
-  RFC3339*  = "y"
-  Kitchen*  = "y"
-  Stamp*    ="y"
+  ANSIC*    = "Mon Jan _2 15:04:05 2006"
+  UnixDate* = "Mon Jan _2 15:04:05 MST 2006"
+  RubyDate* = "Mon Jan 02 15:04:05 -0700 2006"
+  RFC822*   = "02 Jan 06 15:04 MST"
+  RFC822Z*  = "02 Jan 06 15:04 -0700"
+  RFC850*   = "Monday, 02-Jan-06 15:04:05 MST"
+  RFC1123*  = "Mon, 02 Jan 2006 15:04:05 MST"
+  RFC1123Z* = "Mon, 02 Jan 2006 15:04:05 -0700"
+  RFC3339*  = "2006-01-02T15:04:05Z07:00"
+  Kitchen*  = "3:04PM"
+  Stamp*    ="Jan _2 15:04:05"
 
-type
-  Now* =ref object of RootObj
-    time: TimeInfo
 
